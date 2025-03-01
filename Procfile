@@ -1,1 +1,1 @@
-web: java -jar target/votre-application.jar
+web: java -jar build/libs/SGBD-Project-1.0-SNAPSHOT.jar

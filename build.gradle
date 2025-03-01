@@ -1,11 +1,18 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group 'com.votredomaine'
-version '1.0-SNAPSHOT'
+group = 'src'
+version = '1.0-SNAPSHOT'
 
-sourceCompatibility = 17
+java {
+    sourceCompatibility = JavaVersion.VERSION_17 // ou VERSION_11
+}
+
+application {
+    mainClass = 'src/TestConnexion.java' // Remplacez par votre classe principale
+}
 
 repositories {
     mavenCentral()
