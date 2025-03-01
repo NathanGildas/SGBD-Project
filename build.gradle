@@ -1,22 +1,18 @@
 plugins {
     id 'java'
-    id 'war'  // Ajoute le plugin WAR pour générer un fichier WAR
 }
 
-group 'SGBD-Project'
+group 'com.votredomaine'
 version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    // Dépendances de ton projet
-    implementation 'javax.servlet:javax.servlet-api:4.0.1'
-    implementation 'mysql:mysql-connector-java:8.0.26'
-    // Ajoute d'autres dépendances nécessaires
-}
-
-war {
-    archiveFileName = 'gestion-parrainages.war'  // Nom du fichier WAR généré
+jar {
+    manifest {
+        attributes 'Main-Class': '../src/TestConnexion'
+    }
 }
