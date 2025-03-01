@@ -5,7 +5,7 @@ plugins {
 group 'com.votredomaine'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
@@ -16,3 +16,14 @@ jar {
         attributes 'Main-Class': '../src/TestConnexion'
     }
 }
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.5.1'
+    implementation 'com.opencsv:opencsv:5.7.1'
+}
+
+task stage(dependsOn: ['build', 'clean']) {
+    group = 'application'
+    description = 'Build and clean the application for deployment'
+}
+build.mustRunAfter clean
