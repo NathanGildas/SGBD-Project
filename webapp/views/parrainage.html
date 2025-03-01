@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des parrainages</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
+<header>
+  <h1>Gestion des parrainages</h1>
+</header>
+<main>
+  <section>
+    <h2>Liste des candidats</h2>
+    <ul id="candidate-list">
+      <!-- Les candidats seront ajoutés dynamiquement ici -->
+    </ul>
+  </section>
+  <section>
+    <h2>Parrainer un candidat</h2>
+    <form id="sponsor-form">
+      <label for="candidate-select">Choisir un candidat :</label>
+      <select id="candidate-select" name="candidate-select" required>
+        <!-- Les options seront ajoutées dynamiquement ici -->
+      </select>
+      <button type="submit">Parrainer</button>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2023 Plateforme de gestion</p>
+</footer>
+<script src="js/parrainage.js"></script>
 </body>
 </html>

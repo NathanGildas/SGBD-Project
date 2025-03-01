@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord Admin</title>
+  <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-
+<header>
+  <h1>Tableau de bord Administrateur</h1>
+  <nav>
+    <ul>
+      <li><a href="upload-electeurs.html">Importer des électeurs</a></li>
+      <li><a href="suivi-parrainage.html">Suivi des parrainages</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Statistiques</h2>
+    <p>Nombre de candidats : <span id="candidate-count">0</span></p>
+    <p>Nombre d'électeurs : <span id="voter-count">0</span></p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2023 Plateforme de gestion</p>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

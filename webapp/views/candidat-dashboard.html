@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord Candidat</title>
+  <link rel="stylesheet" href="../css/candidat.css">
 </head>
 <body>
-
+<header>
+  <h1>Tableau de bord Candidat</h1>
+</header>
+<main>
+  <section>
+    <h2>Vos informations</h2>
+    <p>Nom : <span id="candidate-name">Nom du candidat</span></p>
+    <p>Parti : <span id="candidate-party">Parti politique</span></p>
+  </section>
+  <section>
+    <h2>Actions</h2>
+    <button onclick="window.location.href='parrainage.html'">Gérer les parrainages</button>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2023 Plateforme de gestion</p>
+</footer>
+<script src="js/candidat.js"></script>
 </body>
 </html>

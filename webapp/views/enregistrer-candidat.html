@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enregistrer un candidat</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<header>
+  <h1>Enregistrer un candidat</h1>
+</header>
+<main>
+  <form id="register-candidate-form">
+    <label for="candidate-name">Nom du candidat :</label>
+    <input type="text" id="candidate-name" name="candidate-name" required>
 
+    <label for="candidate-party">Parti politique :</label>
+    <input type="text" id="candidate-party" name="candidate-party" required>
+
+    <label for="candidate-bio">Biographie :</label>
+    <textarea id="candidate-bio" name="candidate-bio" rows="4" required></textarea>
+
+    <button type="submit">Enregistrer</button>
+  </form>
+</main>
+<footer>
+  <p>&copy; 2023 Plateforme de gestion</p>
+</footer>
+<script src="js/candidat.js"></script>
 </body>
 </html>
