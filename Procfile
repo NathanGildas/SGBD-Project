@@ -1,1 +1,0 @@
-web: java -jar build/libs/SGBD-Project-1.0-SNAPSHOT.jar
