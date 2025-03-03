@@ -22,6 +22,10 @@ import java.util.Optional;
 @Tag(name = "Auth Controller", description = "Gestion de l'authentification et de l'enregistrement")
 public class AuthController {
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

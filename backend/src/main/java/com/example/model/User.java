@@ -33,6 +33,15 @@ public class User {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
+    @NotBlank(message = "Le nom d'utilisateur est obligatoire")
+    @Size(max = 50, message = "Le nom d'utilisateur ne doit pas dépasser 50 caractères")
+    @Column(name = "username", nullable = false, unique = true)
+    private String username;
+
+    @NotBlank(message = "Le mot de passe est obligatoire")
+    @Column(name = "password", nullable = false)
+    private String password;
+
     @NotBlank(message = "Le rôle est obligatoire")
     @Column(name = "role", nullable = false)
     private String role; // Exemple de rôle (ADMIN, CANDIDAT, ELECTEUR)
