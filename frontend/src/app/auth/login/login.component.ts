@@ -15,6 +15,6 @@ export class LoginComponent {
 
   onSubmit() {
     console.log('Username:', this.username);
-    console.log('Password:', this.password);
+    console.log('Password: [REDACTED]');
   }
 }
