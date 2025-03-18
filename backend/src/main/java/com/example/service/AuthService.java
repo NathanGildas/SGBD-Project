@@ -3,7 +3,7 @@ package com.example.service;
 import com.example.model.User;
 import com.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -14,8 +14,12 @@ public class AuthService {
     @Autowired
     private UserRepository userRepository;
 
+    private PasswordEncoder passwordEncoder;
+
     @Autowired
-    private BCryptPasswordEncoder passwordEncoder;
+    public void UserService(PasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
 
     public Optional<User> authenticate(String email, String password) {
         Optional<User> user = userRepository.findByEmail(email);

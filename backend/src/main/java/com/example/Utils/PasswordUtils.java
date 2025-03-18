@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.example.Utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
