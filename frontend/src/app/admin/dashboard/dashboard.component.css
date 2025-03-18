@@ -1,3 +1,22 @@
+header {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
 h2 {
-  color: #333;
+  color: #4CAF50; /* Green */
+}
+
+.button-danger {
+  margin-top: 20px;
 }

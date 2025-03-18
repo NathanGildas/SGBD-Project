@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import {Router, RouterLink} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { Component } from '@angular/core';
+import { fadeInAnimation, slideInAnimation } from '../../shared/animations';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
+  animations: [fadeInAnimation, slideInAnimation],
   styleUrls: ['./login.component.css'],
   imports: [
     FormsModule,

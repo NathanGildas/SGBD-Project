@@ -26,6 +26,7 @@ public class AuthController {
     public String sayHello() {
         return "Hello, World!";
     }
+
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

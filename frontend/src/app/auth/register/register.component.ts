@@ -2,12 +2,14 @@ import { AuthService } from '../auth.service';
 import {Router, RouterLink} from '@angular/router';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // Importer FormsModule
+import { fadeInAnimation, slideInAnimation } from '../../shared/animations';
 
 @Component({
   selector: 'app-register',
   standalone: true, // Assurez-vous que le composant est autonome
   imports: [FormsModule, RouterLink], // Ajouter FormsModule ici
   templateUrl: './register.component.html',
+  animations: [fadeInAnimation, slideInAnimation],
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {

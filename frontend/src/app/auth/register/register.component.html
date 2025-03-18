@@ -1,8 +1,10 @@
-<h2>Inscription</h2>
-<form (ngSubmit)="onSubmit()">
-  <input [(ngModel)]="username" name="username" placeholder="Nom d'utilisateur" required>
-  <input [(ngModel)]="email" name="email" type="email" placeholder="Email" required>
-  <input [(ngModel)]="password" name="password" type="password" placeholder="Mot de passe" required>
-  <button type="submit">S'inscrire</button>
-</form>
-<p>Déjà inscrit ? <a routerLink="/login">Connectez-vous ici</a>.</p>
+<div class="card" @fadeIn>
+  <h2>Inscription</h2>
+  <form (ngSubmit)="onSubmit()" @slideIn>
+    <input [(ngModel)]="username" name="username" placeholder="Nom d'utilisateur" required>
+    <input [(ngModel)]="email" name="email" type="email" placeholder="Email" required>
+    <input [(ngModel)]="password" name="password" type="password" placeholder="Mot de passe" required>
+    <button type="submit" class="button-primary">S'inscrire</button>
+  </form>
+  <p>Déjà inscrit ? <a routerLink="/login" class="button-secondary">Connectez-vous ici</a>.</p>
+</div>

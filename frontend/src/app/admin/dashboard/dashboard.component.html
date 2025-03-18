@@ -1,2 +1,14 @@
-<h2>{{ message }}</h2>
-<p>Bienvenue sur le tableau de bord administrateur.</p>
+<header @fadeIn>
+  <h1>Tableau de bord Admin</h1>
+  <nav>
+    <a routerLink="/admin/dashboard">Accueil</a>
+    <a routerLink="/admin/users">Utilisateurs</a>
+    <a routerLink="/admin/settings">Paramètres</a>
+  </nav>
+</header>
+
+<div class="card" @slideIn>
+  <h2>Bienvenue, Admin</h2>
+  <p>Gérez vos utilisateurs et paramètres ici.</p>
+  <button class="button-danger" (click)="logout()">Déconnexion</button>
+</div>

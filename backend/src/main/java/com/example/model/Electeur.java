@@ -16,4 +16,9 @@ public class Electeur extends User {
 
     @Column(name = "motDePasseHash", length = 255, nullable = false)
     private String motDePasseHash;
+
+    // Ajoutez les méthodes manquantes
+    public void setId(Long id) {
+        super.setId(id);
+    }
 }

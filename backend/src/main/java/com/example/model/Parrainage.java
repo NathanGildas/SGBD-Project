@@ -18,14 +18,22 @@ public class Parrainage {
     @Column(name = "idParrainage")
     private int idParrainage;
 
+    // Ajoutez les méthodes manquantes
+    @Setter
+    @Getter
     @ManyToOne
     @JoinColumn(name = "cinElecteur", nullable = false)
     private Electeur electeur;
 
+    @Getter
+    @Setter
     @ManyToOne
     @JoinColumn(name = "idCandidat", nullable = false)
     private Candidat candidat;
 
+    @Setter
+    @Getter
     @Column(name = "dateParrainage", nullable = false)
     private LocalDateTime dateParrainage;
+
 }

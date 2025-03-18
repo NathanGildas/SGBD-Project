@@ -16,4 +16,9 @@ public class Candidat extends User {
 
     @Column(name = "partiPolitique", length = 100)
     private String partiPolitique;
+
+    // Ajoutez les méthodes manquantes
+    public void setId(Long id) {
+        super.setId(id);
+    }
 }
